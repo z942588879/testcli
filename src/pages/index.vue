@@ -11,24 +11,26 @@
 <script lang="ts">
   import { defineComponent } from 'vue';
   import UsePinia from '@/components/UsePinia.vue';
-  import { login } from '@/api/user/index'
+  import { login } from '@/api/user/index';
 
   export default defineComponent({
     name: 'IndexPage',
     components: {
       UsePinia
     },
-    setup(){
-      const input = '222'
-      const arr = async()=>{
-        const res = await login({ username:'11',password:'1'})
-        console.log(res)
-      } 
-      arr()
+    setup() {
+      const test = 1;
+      console.log(test);
+      const input = '222';
+      const arr = async () => {
+        const res = await login({ username: '11', password: '1' });
+        console.log(res);
+      };
+      arr();
       return {
         input,
         arr
-      }
+      };
     }
   });
 </script>

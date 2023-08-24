@@ -6,10 +6,10 @@ import AutoImport from 'unplugin-auto-import/vite';
 import Components from 'unplugin-vue-components/vite';
 import { ElementPlusResolver } from 'unplugin-vue-components/resolvers';
 // mock
-import { viteMockServe } from 'vite-plugin-mock'
+import { viteMockServe } from 'vite-plugin-mock';
 
 // https://vitejs.dev/config/
-export default defineConfig((config)=>{
+export default defineConfig((config) => {
   return {
     resolve: {
       //设置别名
@@ -45,5 +45,5 @@ export default defineConfig((config)=>{
         }
       }
     }
-  }
+  };
 });

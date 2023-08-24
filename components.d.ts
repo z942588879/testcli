@@ -7,9 +7,9 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    ElInput: typeof import('element-plus/es')['ElInput']
-    RouterLink: typeof import('vue-router')['RouterLink']
-    RouterView: typeof import('vue-router')['RouterView']
-    UsePinia: typeof import('./src/components/UsePinia.vue')['default']
+    ElInput: typeof import('element-plus/es')['ElInput'];
+    RouterLink: typeof import('vue-router')['RouterLink'];
+    RouterView: typeof import('vue-router')['RouterView'];
+    UsePinia: typeof import('./src/components/UsePinia.vue')['default'];
   }
 }

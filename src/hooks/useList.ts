@@ -23,12 +23,12 @@ export default function useList<ItemType extends Object, FilterOption extends Ob
     try {
       const {
         data,
-        meta: { total: count },
-      } = await listRequestFn(pageSize.value, page,filterOption.value);
+        meta: { total: count }
+      } = await listRequestFn(pageSize.value, page, filterOption.value);
       list.value = data;
       total.value = count;
     } catch (error) {
-      console.log("请求出错了", "error");
+      console.log('请求出错了', 'error');
     } finally {
       // 关闭加载中
       loading.value = false;
